@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang=ru>
+<meta charset=UTF-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>Капоэйра Сызрань</title>
+<link href=img/logo.png rel=icon type=image/x-icon>
+<link href=fa/css/font-awesome.min.css rel=stylesheet>
+<link href=styles/style.min.css rel=stylesheet>
+<div class="hidden modal" id=modal>
+    <div class=modal__content>
+        <div class=modal__content__form>
+            <button class=close id=close>×</button>
+            <h2>Записаться</h2>
+            <p>Оставьте заявку и мы перезвоним вам в ближайшее время!
+            <form action=https://formsubmit.co/syzran@axecapoeira.ru
+                  method=POST>
+                  <input name=firstName pattern=[А-я]+ placeholder=Имя required>
+                       <input name=lastName pattern=[А-я]+ placeholder=Фамилия required>
+                <div class=number-wrap>
+                    <span class=number-wrap__prefix></span>
+                    <input name=phone pattern=[0-9]{10} placeholder=+7(937)-212-19-89 required class=number type=tel>
+                </div>
+                <input class=btn type=submit id=submit value=Подтвердить>
+            </form>
+            <div class=result></div>
+        </div>
+    </div>
+</div>
+<div class=content>
+    <header>
+        <div class=logo><img alt=logo src=img/logo.png>
+            <h1>Капоэйра Сызрань</h1>
+        </div>
+        <div class="order order-head"><span>Записаться на пробное занятие можно нажав</span>
+            <button class="btn btn-order">СЮДА</button>
+            <span>или по телефону:</span>
+            <span>+7(937)-212-19-89 (Дмитрий)</span>
+        </div>
+    </header>
+    <main>
+        <section class=about-capo>
+            <h2>Что такое капоэйра?</h2>
+            <div class=text>
+                <p>Капоэйра — бразильское боевое искусство, сочетающее в себе ударнуюи борцовскую технику,
+                    акробатику, музыку, элементы танца.
+                <p>В программе тренировок:
+                <ul>
+                    <li>Базовая техника капоэйры;
+                    <li>Ударные техники (руки, ноги, локти, колени, голова);
+                    <li>Борцовские техники, броски, подсечки и болевые приемы;
+                    <li>Растяжка для боевых искусств и акробатики;
+                    <li>Перемещения в Роде(круг где играют капоэйру) , стойки, ложные движения, защитные действия;
+                    <li>Общая физическая и специальная физическая подготовка;
+                    <li>Акробатика;
+                    <li>Музыкальные занятия;
+                    <li>Основы португальского языка;
+                    <li>Подготовка и участие в споревнованиях по спортивной капоэйре;
+                    <li>Ежегодная подготовка и прохождение аттестации на пояса.
+                </ul>
+                <p>Тренировки предназначены для всех, независимо от возраста и пола, физической подготовки.
+            </div>
+        </section>
+        <section class=photo>
+            <h2>Наш тренер</h2>
+            <figure><img alt=photo
+                     src=img/trainer.jpg>
+                <figcaption>
+                    <p><b>Тренер:</b> представитель всемирно известной школы Аше Капоэйра, профильное
+                        образование, обладатель коричневого пояса, 10 лет опыта, ученики чемпионы и призеры соревновний.
+                        <hr>
+                        <b>Дмитрий Евгеньевич Селиванов</b>
+                </figcaption>
+            </figure>
+        </section>
+        <div class=timetable>
+            <h2>Расписание</h2>
+            <div class="timetable__group children">
+                <h3>Дети (от 4 — 14 лет) <i aria-hidden=true
+                       class="fa fa-chevron-down"></i></h3>
+                <div class="hidden timetable__group__dropdown"><span><b>Фитнес зал</b></span><span><b>Вт:</b>
+                        19:00-20:00</span><span><b>Чт:</b> 19:00-20:00</span><span><b>Сб:</b> 10:00-11:00</span>
+                </div>
+            </div>
+            <div class="timetable__group adults">
+                <h3>Взрослые (от 14 лет) <i aria-hidden=true
+                       class="fa fa-chevron-down"></i></h3>
+                <div class="hidden timetable__group__dropdown"><span><b>Фитнес зал</b></span><span><b>Вт:</b>
+                        18:00-19:00</span><span><b>Чт:</b> 18:00-19:00</span><span><b>Пт:</b> 11:00-12:00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Контакты</h2>
+        <div class=contacts-wrap>
+            <div class=map>
+                <iframe frameborder=0
+                        height=280
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c31b8204afde5ae4945e85622de9d019c48e020e2f5cd577eddaba35386ead0&source=constructor"
+                        width=636></iframe>
+            </div>
+            <div class=contacts
+                 itemscope
+                 itemtype=https://schema.org/Organization>
+                <h3 itemprop=name>Капоэйра
+                    Сызрань</h3>
+                <div class=address>
+                    <div class=address__item
+                         itemprop=address
+                         itemscopeitemtype=https://schema.org/PostalAddress>
+                        <h3>Дом
+                            молодежных организаций</h3><br><span itemprop=streetAddress>ул. Победы, д.68А,
+                            Сызрань</span>
+                    </div>
+                </div>
+                <p><b>Телефон:</b> <span itemprop=telephone>+7(937)212-19-89</span> (Дмитрий)
+                <p><b>Email:</b> <span itemprop=email>syzran@axecapoeira.ru</span>
+            </div>
+        </div>
+        <div class=line></div>
+        <div class=social>
+            <div class=social__wrap><a class=social__wrap__item
+                   href=https://vk.com/capoeirasyzran
+                   target=_blank>
+                    <div class=fa-stack><i aria-hidden=true
+                           class="fa fa-circle-thin fa-stack-2x"></i> <i aria-hidden=true
+                           class="fa fa-stack-1x fa-vk"></i>
+                    </div>
+                </a><a class=social__wrap__item
+                   href=https://www.instagram.com/capoeirasyzran/
+                   target=_blank>
+                    <div class=fa-stack><i aria-hidden=true
+                           class="fa fa-circle-thin fa-stack-2x"></i> <i aria-hidden=true
+                           class="fa fa-stack-1x fa-instagram"></i>
+                    </div>
+                </a></div>
+        </div>
+        <div class=line></div>
+        <div class="order order-foot">
+            <button class="btn btn-order">Записаться</button>
+            <span><b>на пробное занятие!</b></span>
+        </div>
+        <div class=copyright><span>© Капоэйра Сызрань</span><span>Все права защищены</span></div>
+    </footer>
+</div>
+<script src=https://code.jquery.com/jquery-3.2.1.min.js
+        crossorigin=anonymous
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="></script>
+<script src=script.js></script>
